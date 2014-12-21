@@ -1,0 +1,36 @@
+From fc210988783699193f03ab4bbd418abb089ef2aa Mon Sep 17 00:00:00 2001
+From: Dave Yeo <dave.r.yeo@gmail.com>
+Date: Wed, 17 Dec 2014 06:27:43 -0800
+Subject: [PATCH 5/6] [SYDNEYAUDIO] Modules are no longer supported
+
+---
+ media/libsydneyaudio/Makefile.in     | 2 --
+ media/libsydneyaudio/src/Makefile.in | 1 -
+ 2 files changed, 3 deletions(-)
+
+diff --git a/media/libsydneyaudio/Makefile.in b/media/libsydneyaudio/Makefile.in
+index cdbafca..ef40c1e 100644
+--- a/media/libsydneyaudio/Makefile.in
++++ b/media/libsydneyaudio/Makefile.in
+@@ -9,6 +9,4 @@ VPATH		= @srcdir@
+ 
+ include $(DEPTH)/config/autoconf.mk
+ 
+-MODULE		= sydneyaudio
+-
+ include $(topsrcdir)/config/rules.mk
+diff --git a/media/libsydneyaudio/src/Makefile.in b/media/libsydneyaudio/src/Makefile.in
+index 66050cb..daea308 100644
+--- a/media/libsydneyaudio/src/Makefile.in
++++ b/media/libsydneyaudio/src/Makefile.in
+@@ -9,7 +9,6 @@ VPATH		= @srcdir@
+ 
+ include $(DEPTH)/config/autoconf.mk
+ 
+-MODULE		= sydneyaudio
+ LIBRARY_NAME	= sydneyaudio
+ FORCE_STATIC_LIB= 1
+ ifeq (WINNT,$(OS_TARGET))
+-- 
+2.0.0
+
